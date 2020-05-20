@@ -3,6 +3,6 @@
     "name": "Omega Zendesk Tool",
     "short_description": "Displays Omegatics customer and order details.",
     "long_description": "This tool helps the customer support process of Omega members quickly. \nIt's public and free for everyone.",
-    "installation_instructions": "Install and experience this tool in the application section on the ticket interface."
+    "installation_instructions": "Install and experience this tool in the Apps section on the ticket interface."
   }
 }
