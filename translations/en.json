@@ -1,8 +1,8 @@
 {
   "app": {
-    "name": "Zen Tunes",
-    "short_description": "Play the famous zen tunes in your help desk.",
-    "long_description": "Play the famous zen tunes in your help desk and \n listen to the beats it has to offer.",
-    "installation_instructions": "Simply click install."
+    "name": "Omega Zendesk Tool",
+    "short_description": "Displays Omegatics customer and order details.",
+    "long_description": "This tool helps the customer support process of Omega members quickly. \nIt's public and free for everyone.",
+    "installation_instructions": "Install and experience this tool in the application section on the ticket interface."
   }
 }
