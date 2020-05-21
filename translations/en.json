@@ -1,8 +1,8 @@
 {
   "app": {
-    "name": "Omega Zendesk Tool",
-    "short_description": "Displays Omegatics customer and order details.",
-    "long_description": "This tool helps the customer support process of Omega members quickly. \nIt's public and free for everyone.",
-    "installation_instructions": "Install and experience this tool in the Apps section on the ticket interface."
+    "name": "Omegatics for Support",
+    "short_description": "Displays customer and order details from Omegatics.",
+    "long_description": "The Omegatics app for Zendesk unites your business by displaying critical Omegatics data to your agents while they serve customers in Zendesk. \nThe application queries your Omegatics database to find the customer’s details and recent orders. In addition, it displays order summary information if a chat or ticket is linked to an individual order.",
+    "installation_instructions": "1. Install Omegatics for Support app. \n2. The integration will automatically setup the Omegatics for Support app in Zendesk Support Apps."
   }
 }
