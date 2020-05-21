@@ -1,32 +1,37 @@
 $(function () {
   var client = ZAFClient.init();
   client.invoke("resize", { width: "100%", height: "800px" });
-
   client.get("ticket").then(function (data) {
     requestUserInfo(client, data);
   });
+
 });
 
 function requestUserInfo(client, data) {
-  var settings = {
-    url: "https://omegatics.com/api/zendesk/info",
-    type: "POST",
-    dataType: "json",
-    data: {
-      email: data.ticket.requester.email,
-      subdomain: data.ticket.brand.subdomain,
-    },
-    cors: true,
-  };
+  client.metadata().then(function (metadata) {
+    let setting = metadata.settings;
+    let url = `https://${setting.api_key}:${setting.password}@${setting.domain}${setting.pattern}`
+    var settings = {
+      url: url,
+      type: "POST",
+      dataType: "json",
+      data: {
+        email: data.ticket.requester.email,
+        subdomain: data.ticket.brand.subdomain,
+      },
+      cors: true,
+    };
 
-  client.request(settings).then(
-    function (data) {
-      showInfo(data);
-    },
-    function (response) {
-      showError(response);
-    }
-  );
+    client.request(settings).then(
+      function (data) {
+        showInfo(data);
+      },
+      function (response) {
+        showError(response);
+      }
+    );
+  });
+
 }
 
 function showInfo(data) {
@@ -38,7 +43,6 @@ function showInfo(data) {
     // total_price: data.total_price,
     // purchase_items: data.purchase_items,
   };
-
   var source = $("#requester-template").html();
   var template = Handlebars.compile(source);
   var html = template(requester_data);

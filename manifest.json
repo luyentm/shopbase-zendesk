@@ -1,9 +1,9 @@
 {
-  "name": "Omegatics for Support",
+  "name": "Shopbase Integration",
   "author": {
     "name": "Tran Minh Luyen",
-    "email": "tranminhluyen.1993@gmail.com",
-    "url": "http://test.omegatics.com"
+    "email": "admin@omegatics.com",
+    "url": "https://www.omegatics.com"
   },
   "defaultLocale": "en",
   "private": false,
@@ -12,6 +12,33 @@
       "ticket_sidebar": "assets/iframe.html"
     }
   },
-  "version": "1.1",
-  "frameworkVersion": "2.0"
+  "singleInstall": true,
+  "version": "1.2",
+  "frameworkVersion": "2.0",
+  "parameters": [
+    {
+      "name": "domain",
+      "type": "text",
+      "required": true,
+      "default": "https://"
+    },
+    {
+      "name": "api_key",
+      "type": "text",
+      "required": true,
+      "secure": true
+    },
+    {
+      "name": "password",
+      "type": "text",
+      "required": true,
+      "secure": true
+    },
+    {
+      "name": "pattern",
+      "type": "text",
+      "required": true,
+      "secure": true
+    }
+  ]
 }
