@@ -23,13 +23,13 @@
       "default": "https://"
     },
     {
-      "name": "api_key",
+      "name": "key_1",
       "type": "text",
       "required": true,
       "secure": true
     },
     {
-      "name": "password",
+      "name": "key_2",
       "type": "text",
       "required": true,
       "secure": true

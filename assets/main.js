@@ -10,7 +10,7 @@ $(function () {
 function requestUserInfo(client, data) {
   client.metadata().then(function (metadata) {
     let setting = metadata.settings;
-    let url = `https://${setting.api_key}:${setting.password}@${setting.domain}${setting.pattern}`
+    let url = `https://${setting.key_1}:${setting.key_2}@${setting.domain}${setting.pattern}`
     var settings = {
       url: url,
       type: "POST",

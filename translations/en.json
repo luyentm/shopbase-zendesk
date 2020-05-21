@@ -3,6 +3,6 @@
     "name": "Omegatics for Support",
     "short_description": "The Shopbase app for Zendesk unites your business by displaying critical Shopbase data to your agents while they serve customers in Zendesk.",
     "long_description": "#If you manage a Shopbase online store, you can simplify your support with this integration app. Next to each Zendesk ticket, you will see every relevant piece of information such as:\n* order number\n* quantity\n* price\n* paid date\n* purchare items\n\nAll it takes is a few clicks to integrate the Zendesk App within your direct your Shopbase store. Make it easy for your customers to submit a ticket directly from your store.\n#Any feedback is welcome: tranminhluyen.1993@gmail.com",
-    "installation_instructions": "1. Install Omegatics for Support app.\n\n2. Add some details about your Shopbase store:\n\n* domain\n* api key (from private shopbase app)\n* password app\n* pattern url (email,order)"
+    "installation_instructions": "1. Install Omegatics for Support app.\n\n2. Add some details about your Shopbase store:\n\n* domain\n* key_1 (from private shopbase app)\n* key_2 app\n* pattern url (email,order)"
   }
 }
