@@ -1,5 +1,5 @@
 {
-  "name": "Shopbase Integration",
+  "name": "Shopbase Integration by Omegatics",
   "author": {
     "name": "Tran Minh Luyen",
     "email": "admin@omegatics.com",
@@ -15,30 +15,25 @@
   "singleInstall": true,
   "version": "1.2",
   "frameworkVersion": "2.0",
+  "domainWhitelist": [
+    "omegatics.com"
+  ],
   "parameters": [
     {
       "name": "domain",
       "type": "text",
       "required": true,
-      "default": "https://"
+      "default": "https://omegatics.com"
     },
     {
-      "name": "key_1",
+      "name": "omega_handshake",
       "type": "text",
-      "required": true,
-      "secure": true
-    },
-    {
-      "name": "key_2",
-      "type": "text",
-      "required": true,
-      "secure": true
+      "required": true
     },
     {
       "name": "pattern",
       "type": "text",
-      "required": true,
-      "secure": true
+      "required": true
     }
   ]
 }

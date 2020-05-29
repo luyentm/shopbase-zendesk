@@ -10,7 +10,7 @@ $(function () {
 function requestUserInfo(client, data) {
   client.metadata().then(function (metadata) {
     let setting = metadata.settings;
-    let url = `https://${setting.key_1}:${setting.key_2}@${setting.domain}${setting.pattern}`
+    let url = `${setting.domain}/${setting.pattern}`
     var settings = {
       url: url,
       type: "POST",
@@ -18,6 +18,13 @@ function requestUserInfo(client, data) {
       data: {
         email: data.ticket.requester.email,
         subdomain: data.ticket.brand.subdomain,
+        ticket: {
+          id: data.ticket.id,
+          createdAt: data.ticket.createdAt,
+          omega_handshake: setting.omega_handshake,
+          recipient: data.ticket.recipient,
+          requester: data.ticket.requester
+        },
       },
       cors: true,
     };
